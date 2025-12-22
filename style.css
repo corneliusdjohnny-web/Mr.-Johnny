@@ -1,0 +1,65 @@
+:root{
+	--bg:#f7f9fc;
+	--card:#ffffff;
+	--text:#14213d;
+	--muted:#555b6e;
+	--accent:#2193b0;
+	--container:1100px;
+	font-size:16px;
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial}
+body{background:var(--bg);color:var(--text);line-height:1.5}
+.container{max-width:var(--container);margin:0 auto;padding:0 16px}
+
+/* Header */
+.site-header{background:#fff;border-bottom:1px solid #e6e9ef}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+.logo{font-weight:700;color:var(--accent)}
+.logo{display:flex;align-items:center}
+.logo .avatar{width:44px;height:44px;border-radius:8px;margin-right:10px;display:inline-block}
+.logo span{font-weight:700;color:var(--accent)}
+.nav a{margin-left:18px;color:var(--muted);text-decoration:none}
+.nav a:hover{color:var(--text)}
+
+/* Hero */
+.hero{padding:64px 0;text-align:center;background:linear-gradient(180deg,rgba(33,147,176,0.06),transparent)}
+.hero h1{font-size:2rem;margin:0 0 8px}
+.lead{color:var(--muted);margin:0 0 18px}
+.btn{display:inline-block;background:var(--accent);color:#fff;padding:10px 16px;border-radius:6px;text-decoration:none}
+
+/* Sections */
+section{padding:48px 0}
+section h2{margin:0 0 12px}
+.about p{max-width:60ch;color:var(--muted)}
+.about button{background:var(--accent);color:#fff;border:none;padding:10px 16px;border-radius:6px;cursor:pointer;margin-top:18px}
+.about button:hover{background:#1a7a8a}
+.gallery{margin-top:32px}
+.gallery h3{margin:0 0 18px;font-size:1.2rem}
+.gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px}
+.gallery-grid img{width:100%;height:auto;border-radius:8px}
+
+/* Projects grid */
+.projects .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.card{background:var(--card);border-radius:8px;padding:14px;box-shadow:0 6px 18px rgba(16,24,40,0.06);display:flex;flex-direction:column}
+.thumb{height:120px;border-radius:6px;margin-bottom:12px}
+.card h3{margin:0 0 6px;font-size:1.05rem}
+.card p{margin:0 0 12px;color:var(--muted);flex:1}
+.link{color:var(--accent);text-decoration:none;font-weight:600}
+
+/* Contact */
+.contact a{color:var(--accent)}
+
+/* Footer */
+.site-footer{padding:18px 0;background:#fff;border-top:1px solid #e6e9ef;text-align:center;color:var(--muted)}
+
+/* Responsive tweaks */
+@media (max-width:640px){
+	.hero{padding:40px 0}
+	.header-inner{padding:10px 0}
+	.nav a{margin-left:12px}
+}
+
+/* Utility */
+.container.header-inner{padding-left:8px;padding-right:8px}
+
